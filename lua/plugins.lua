@@ -9,10 +9,20 @@ vim.cmd [[packadd packer.nvim]]
 packer.startup(function(use)
 
   use 'wbthomason/packer.nvim'
+
   use 'nvim-lua/plenary.nvim' -- Common 
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
   -- use 'sainnhe/everforest'
 
+  use {
+  "nvim-neo-tree/neo-tree.nvim",
+    branch = "v2.x",
+    requires = { 
+      "nvim-lua/plenary.nvim",
+      "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
+      "MunifTanjim/nui.nvim",
+    }
+  }
   use 'lukas-reineke/indent-blankline.nvim'
 
   use 'lambdalisue/nerdfont.vim'
@@ -20,12 +30,13 @@ packer.startup(function(use)
   use 'antoinemadec/FixCursorHold.nvim'
 
   use 'nvim-lualine/lualine.nvim' -- Statusline
+
   use 'zefei/vim-wintabs'
   use 'zefei/vim-wintabs-powerline'
 
-  use 'lambdalisue/fern.vim'
-  use 'lambdalisue/fern-renderer-nerdfont.vim'
-  use 'lambdalisue/glyph-palette.vim'
+  -- use 'lambdalisue/fern.vim'
+  -- use 'lambdalisue/fern-renderer-nerdfont.vim'
+  -- use 'lambdalisue/glyph-palette.vim'
   
   use {
     "williamboman/mason.nvim",
@@ -33,6 +44,7 @@ packer.startup(function(use)
     "neovim/nvim-lspconfig",
   }
 
+  use 'j-hui/fidget.nvim'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-vsnip'
@@ -53,7 +65,7 @@ packer.startup(function(use)
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
 
-  use 'kyazdani42/nvim-web-devicons' -- File icons for Neovim.
+  use 'kyazdani42/nvim-web-devicons'
 
   --Linter + Formatter
   use({
@@ -64,10 +76,12 @@ packer.startup(function(use)
   use 'MunifTanjim/prettier.nvim'
 
   use 'nvim-telescope/telescope.nvim'
-  use 'windwp/nvim-autopairs'
 
-  use 'norcalli/nvim-colorizer.lua'
+  use 'windwp/nvim-autopairs' 
+  use "terrortylor/nvim-comment"
+  use 'mattn/emmet-vim'
 
+  use 'norcalli/nvim-colorizer.lua' 
   use 'dinhhuy258/git.nvim'
   use 'lewis6991/gitsigns.nvim'
   

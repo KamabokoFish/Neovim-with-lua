@@ -17,10 +17,10 @@ require('catppuccin').setup({
       native_lsp = {
 			enabled = true,
 			virtual_text = {
-				errors = { "italic" },
-				hints = { "italic" },
-				warnings = { "italic" },
-				information = { "italic" },
+				errors = { "nocombine" },
+				hints = { "nocombine" },
+				warnings = { "nocombine" },
+				information = { "nocombine" },
 			},
 			underlines = {
 				errors = { "underline" },

@@ -1,4 +1,4 @@
-
+vim.cmd([[
 let g:fern#renderer = "nerdfont"
 
 let g:fern#default_hidden=1
@@ -19,3 +19,5 @@ augroup fern-settings
   autocmd!
   autocmd FileType fern call s:fern_settings()
 augroup END
+
+]])
