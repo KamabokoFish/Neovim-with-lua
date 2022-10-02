@@ -1,6 +1,10 @@
 vim.g.catppuccin_flavour = "frappe" -- latte, frappe, macchiato, mocha
 
-require('catppuccin').setup({
+local status, cat = pcall(require, "catppuccin")
+if (not status) then return end
+
+
+cat.setup({
   transparent_background = false,
   styles = {
 		comments = { "italic" },

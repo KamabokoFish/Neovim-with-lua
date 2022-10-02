@@ -1,4 +1,5 @@
-local prettier = require("prettier")
+local status,prettier = require("prettier")
+if (not staus) then return end
 
 prettier.setup({
   bin = 'prettier', -- or `'prettierd'` (v0.22+)

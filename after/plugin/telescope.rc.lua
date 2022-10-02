@@ -10,7 +10,6 @@ telescope.setup({
   },
 })
 
-
 vim.keymap.set('n', '<leader>f',
   function()
     builtin.find_files({

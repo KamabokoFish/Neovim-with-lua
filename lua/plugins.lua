@@ -11,18 +11,10 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use 'nvim-lua/plenary.nvim' -- Common 
+
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
   -- use 'sainnhe/everforest'
 
-  use {
-  "nvim-neo-tree/neo-tree.nvim",
-    branch = "v2.x",
-    requires = { 
-      "nvim-lua/plenary.nvim",
-      "kyazdani42/nvim-web-devicons", -- not strictly required, but recommended
-      "MunifTanjim/nui.nvim",
-    }
-  }
   use 'lukas-reineke/indent-blankline.nvim'
 
   use 'lambdalisue/nerdfont.vim'
@@ -34,9 +26,9 @@ packer.startup(function(use)
   use 'zefei/vim-wintabs'
   use 'zefei/vim-wintabs-powerline'
 
-  -- use 'lambdalisue/fern.vim'
-  -- use 'lambdalisue/fern-renderer-nerdfont.vim'
-  -- use 'lambdalisue/glyph-palette.vim'
+  use 'lambdalisue/fern.vim'
+  use 'lambdalisue/fern-renderer-nerdfont.vim'
+  use 'lambdalisue/glyph-palette.vim'
   
   use {
     "williamboman/mason.nvim",
