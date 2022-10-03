@@ -13,7 +13,8 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim' -- Common 
 
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
-  -- use 'sainnhe/everforest'
+  use 'folke/lsp-colors.nvim'
+  use 'sainnhe/everforest'
 
   use 'lukas-reineke/indent-blankline.nvim'
 
