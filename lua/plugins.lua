@@ -65,13 +65,13 @@ packer.startup(function(use)
     requires = { "nvim-lua/plenary.nvim" },
   })
 
-  use 'MunifTanjim/prettier.nvim'
+  -- use 'MunifTanjim/prettier.nvim'
 
   use 'nvim-telescope/telescope.nvim'
 
   use 'windwp/nvim-autopairs' 
   use "terrortylor/nvim-comment"
-  use 'mattn/emmet-vim'
+  -- use 'mattn/emmet-vim'
 
   use 'norcalli/nvim-colorizer.lua' 
   use 'dinhhuy258/git.nvim'
