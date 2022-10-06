@@ -65,7 +65,7 @@ rename_in_select = true,
 -- if in_cusomt = true you must set in_enable to false
 symbol_in_winbar = {
     in_custom = false,
-    enable = true,
+    enable = false,
     separator = ' ',
     show_file = true,
     -- define how to customize filename, eg: %:., %

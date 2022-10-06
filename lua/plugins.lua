@@ -37,7 +37,7 @@ packer.startup(function(use)
     "neovim/nvim-lspconfig",
   }
 
-  use 'j-hui/fidget.nvim'
+  -- use 'j-hui/fidget.nvim'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-vsnip'
@@ -45,7 +45,11 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-path'
   -- use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/cmp-nvim-lsp-signature-help'
+
   use 'hrsh7th/vim-vsnip'
+  -- vsnip exensions for react.
+  use "rafamadriz/friendly-snippets"
+
   use 'onsails/lspkind.nvim'
 
    use({

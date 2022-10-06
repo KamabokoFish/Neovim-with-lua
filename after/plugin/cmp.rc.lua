@@ -1,7 +1,8 @@
 -- Lspkindのrequire
-local lspkind = require 'lspkind'
+local lspkind = require("lspkind")
 --補完関係の設定
 local cmp = require("cmp")
+
 cmp.setup({
   snippet = {
     expand = function(args)
@@ -10,6 +11,7 @@ cmp.setup({
   },
   sources = {
     { name = "nvim_lsp" },
+    { name = 'vsnip' }, -- For vsnip users.
     { name = "buffer" },
     { name = "path" },
     { name = 'nvim_lsp_signature_help' },
@@ -49,5 +51,9 @@ cmp.setup.cmdline(":", {
   },
 })
 
-
-
+-- vim-vsnip用
+vim.cmd([[
+let g:vsnip_filetypes = {}
+let g:vsnip_filetypes.javascript = ['javascriptreact']
+let g:vsnip_filetypes.typescript = ['typescriptreact']
+]])
