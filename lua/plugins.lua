@@ -13,6 +13,11 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim' -- Common 
 
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
+  use "EdenEast/nightfox.nvim" -- Packer
+  use 'folke/tokyonight.nvim'
+  use 'rmehri01/onenord.nvim'
+  use 'marko-cerovac/material.nvim'
+  use 'sainnhe/sonokai'
   use 'folke/lsp-colors.nvim'
   use 'sainnhe/everforest'
 
@@ -79,7 +84,7 @@ packer.startup(function(use)
   -- use 'mattn/emmet-vim'
 
   use 'norcalli/nvim-colorizer.lua' 
-  use 'dinhhuy258/git.nvim'
+  use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
   
 end)
