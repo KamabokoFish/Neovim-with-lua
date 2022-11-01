@@ -31,6 +31,8 @@ vim.opt.termguicolors = true
 vim.opt.signcolumn = 'yes'
 vim.opt.hidden = true
 
+-- Volta用の設定
+
 -- 不可視文字を非表示(colorscheme用)
 vim.opt.list = false
 -- Leder Key

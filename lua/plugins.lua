@@ -15,11 +15,7 @@ packer.startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
   use "EdenEast/nightfox.nvim" -- Packer
   use 'folke/tokyonight.nvim'
-  use 'rmehri01/onenord.nvim'
-  use 'marko-cerovac/material.nvim'
-  use 'sainnhe/sonokai'
   use 'folke/lsp-colors.nvim'
-  use 'sainnhe/everforest'
 
   use 'lukas-reineke/indent-blankline.nvim'
 

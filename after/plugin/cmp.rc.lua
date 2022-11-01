@@ -9,6 +9,9 @@ cmp.setup({
       vim.fn["vsnip#anonymous"](args.body)
     end,
   },
+  window = {
+        documentation = cmp.config.window.bordered(),
+      },
   sources = {
     { name = "nvim_lsp" },
     { name = 'vsnip' }, -- For vsnip users.
@@ -17,6 +20,7 @@ cmp.setup({
     { name = 'nvim_lsp_signature_help' },
   },
   mapping = cmp.mapping.preset.insert({
+    ['<C-b>'] = cmp.mapping.scroll_docs(4),
     ["<C-p>"] = cmp.mapping.select_prev_item(),
     ["<C-n>"] = cmp.mapping.select_next_item(),
     ['<C-l>'] = cmp.mapping.complete(),

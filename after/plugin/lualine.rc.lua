@@ -1,8 +1,10 @@
 local status,lualine = pcall(require, "lualine")
 if (not status) then return end
 
-lualine.setup {
+require('lualine').setup {
   options = {
-		theme = "catppuccin"
-	},
+    -- ... your lualine config
+    theme = 'tokyonight'
+    -- ... your lualine config
+  }
 }
