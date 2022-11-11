@@ -65,6 +65,11 @@ packer.startup(function(use)
 
   use 'kyazdani42/nvim-web-devicons'
 
+  use {
+  "folke/trouble.nvim",
+  requires = "kyazdani42/nvim-web-devicons",
+}
+
   --Linter + Formatter
   use({
     "jose-elias-alvarez/null-ls.nvim",
