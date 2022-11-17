@@ -1,14 +1,12 @@
-vim.g.catppuccin_flavour = "macchiato" -- latte, frappe, macchiato, mocha
 
 local status, cat = pcall(require, "catppuccin")
 if (not status) then return end
 
 cat.setup({
+	flavour = "macchiato",
   transparent_background = false,
   styles = {
 		comments = { "italic" },
-		conditionals = { "italic" },
-    functions = {"italic"},
   },
   term_colors = true,
   integrations ={
