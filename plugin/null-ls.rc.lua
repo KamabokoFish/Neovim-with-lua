@@ -42,8 +42,8 @@ null_ls.setup({
         prefer_local = "node_modules/.bin",
     }),
         null_ls.builtins.formatting.prettier,
-        null_ls.builtins.diagnostics.rubocop,
-        null_ls.builtins.formatting.rubocop,
+        -- null_ls.builtins.diagnostics.rubocop,
+        -- null_ls.builtins.formatting.rubocop,
     },
     debug = false,
     on_attach = function(client, bufnr)
