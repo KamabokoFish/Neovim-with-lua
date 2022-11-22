@@ -31,6 +31,7 @@ packer.startup(function(use)
   use 'lambdalisue/fern.vim'
   use 'lambdalisue/fern-renderer-nerdfont.vim'
   use 'lambdalisue/glyph-palette.vim'
+  use 'yuki-yano/fern-preview.vim'
   
   use {
     "williamboman/mason.nvim",
