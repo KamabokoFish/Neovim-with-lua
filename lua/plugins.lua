@@ -15,6 +15,8 @@ packer.startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
   use "EdenEast/nightfox.nvim" -- Packer
   use 'folke/tokyonight.nvim'
+  use { "ellisonleao/gruvbox.nvim" }
+  use 'frenzyexists/aquarium-vim'
   use 'folke/lsp-colors.nvim'
 
   use 'lukas-reineke/indent-blankline.nvim'
@@ -46,7 +48,7 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
   -- use 'hrsh7th/cmp-cmdline'
-  use 'hrsh7th/cmp-nvim-lsp-signature-help'
+  -- use 'hrsh7th/cmp-nvim-lsp-signature-help'
 
   use 'hrsh7th/vim-vsnip'
   -- vsnip exensions for react.
@@ -63,7 +65,7 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
-
+  use 'digitaltoad/vim-pug' -- .jadeファイルのシンタックス用
   use 'kyazdani42/nvim-web-devicons'
 
   use {
@@ -83,6 +85,8 @@ packer.startup(function(use)
 
   use 'windwp/nvim-autopairs' 
   use "terrortylor/nvim-comment"
+  use 'machakann/vim-sandwich'
+  use {'kevinhwang91/nvim-hlslens'}
   -- use 'mattn/emmet-vim'
 
   use 'norcalli/nvim-colorizer.lua' 

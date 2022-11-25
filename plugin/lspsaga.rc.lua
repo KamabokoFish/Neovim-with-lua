@@ -67,7 +67,7 @@ symbol_in_winbar = {
     in_custom = false,
     enable = false,
     separator = ' ',
-    show_file = true,
+    show_file = false,
     -- define how to customize filename, eg: %:., %
     -- if not set, use default value `%:t`
     -- more information see `vim.fn.expand` or `expand`
@@ -81,7 +81,7 @@ show_outline = {
   --set special filetype win that outline window split.like NvimTree neotree
   -- defx, db_ui
   win_with = '',
-  win_width = 30,
+  win_width = 35,
   auto_enter = true,
   auto_preview = true,
   virt_text = '┃',
@@ -99,16 +99,10 @@ server_filetype_map = {},
 }
 keymap("n", "<space>e", "<cmd>Lspsaga show_line_diagnostics<CR>", { silent = true })
 keymap("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", { silent = true })
+keymap("n", "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
 keymap({"n","v"}, "ma", "<cmd>Lspsaga code_action<CR>", { silent = true })
 keymap("n", "rn", "<cmd>Lspsaga rename<CR>", { silent = true })
 keymap("n", "K", "<cmd>Lspsaga hover_doc<CR>", { silent = true })
 -- Diagnsotic jump can use `<c-o>` to jump back
 keymap("n", "g[", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })
 keymap("n", "g]", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })
-
-keymap("n", "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
--- vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<CR>', opts)
--- vim.keymap.set('n', 'gd', '<Cmd>Lspsaga lsp_finder<CR>', opts)
--- vim.keymap.set('i', '<C-m>', '<Cmd>Lspsaga signature_help<CR>', opts)
--- vim.keymap.set('n', 'gd', '<Cmd>Lspsaga preview_definition<CR>', opts)
--- vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)

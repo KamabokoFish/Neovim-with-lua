@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/FixCursorHold.nvim",
     url = "https://github.com/antoinemadec/FixCursorHold.nvim"
   },
+  ["aquarium-vim"] = {
+    loaded = true,
+    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/aquarium-vim",
+    url = "https://github.com/frenzyexists/aquarium-vim"
+  },
   catppuccin = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/catppuccin",
@@ -93,11 +98,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
-  },
-  ["cmp-nvim-lsp-signature-help"] = {
-    loaded = true,
-    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp-signature-help",
-    url = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help"
   },
   ["cmp-path"] = {
     loaded = true,
@@ -138,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/glyph-palette.vim",
     url = "https://github.com/lambdalisue/glyph-palette.vim"
+  },
+  ["gruvbox.nvim"] = {
+    loaded = true,
+    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -209,6 +214,11 @@ _G.packer_plugins = {
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/nvim-comment",
     url = "https://github.com/terrortylor/nvim-comment"
   },
+  ["nvim-hlslens"] = {
+    loaded = true,
+    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
+    url = "https://github.com/kevinhwang91/nvim-hlslens"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -253,6 +263,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-pug"] = {
+    loaded = true,
+    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/vim-pug",
+    url = "https://github.com/digitaltoad/vim-pug"
+  },
+  ["vim-sandwich"] = {
+    loaded = true,
+    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/vim-sandwich",
+    url = "https://github.com/machakann/vim-sandwich"
   },
   ["vim-vsnip"] = {
     loaded = true,

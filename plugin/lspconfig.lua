@@ -3,7 +3,7 @@ local on_attach = function(client, bufnr)
   -- LSPのフォーマットを無効
    client.server_capabilities.documentFormattingProvider = false
 
-  -- local set = vim.keymap.set
+  local set = vim.keymap.set
   --set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
   -- set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>")
   -- set("n", "<C-m>", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
@@ -14,6 +14,8 @@ local on_attach = function(client, bufnr)
   -- set("n", "<space>e", "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>")
   -- set("n", "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>")
   -- set("n", "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>")
+
+    set("n", "<leader>mm", "<cmd>lua vim.lsp.buf.format()<CR>") --明示的に全体に対してnull-lsでフォーマット
 
 end
 
@@ -37,14 +39,15 @@ for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
+
 -- Diagnostic Settings
--- vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
---   vim.lsp.diagnostic.on_publish_diagnostics, {
---   underline = true,
---   update_in_insert = false,
---   virtual_text = false,
---   severity_sort = true,
--- })
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+  vim.lsp.diagnostic.on_publish_diagnostics, {
+  underline = true,
+  update_in_insert = false,
+  virtual_text = false,
+  severity_sort = true,
+})
 
 vim.diagnostic.config({
   underline = true,

@@ -3,7 +3,7 @@ local status, cat = pcall(require, "catppuccin")
 if (not status) then return end
 
 cat.setup({
-	flavour = "macchiato",
+	flavour = "frappe",
   transparent_background = false,
   styles = {
 		comments = { "italic" },
@@ -12,7 +12,7 @@ cat.setup({
   integrations ={
       gitsigns = true,
       telescope = true,
-			treesitter = true,
+	  treesitter = true,
       neotree = false,
       lsp_saga = false,
       cmp = true,

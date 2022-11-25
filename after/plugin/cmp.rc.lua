@@ -10,14 +10,14 @@ cmp.setup({
     end,
   },
   window = {
-        documentation = cmp.config.window.bordered(),
+        -- documentation = cmp.config.window.bordered(),
       },
   sources = {
     { name = "nvim_lsp" },
     { name = 'vsnip' }, -- For vsnip users.
     { name = "buffer" },
     { name = "path" },
-    { name = 'nvim_lsp_signature_help' },
+    -- { name = 'nvim_lsp_signature_help' },
   },
   mapping = cmp.mapping.preset.insert({
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
