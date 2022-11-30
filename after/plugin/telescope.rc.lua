@@ -7,6 +7,9 @@ telescope.setup({
   defaults ={
       layout_strategy = 'vertical',
       layout_config = { height = 0.7,width = 0.7 },
+      file_ignore_patterns = {
+        ".git"
+      },
   },
 })
 

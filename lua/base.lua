@@ -31,13 +31,14 @@ vim.opt.termguicolors = true
 vim.opt.signcolumn = 'yes'
 vim.opt.hidden = true
 vim.opt.swapfile = false
+vim.opt.wrap = true
 -- Python3
 vim.cmd([[
     let g:python3_host_prog = '/usr/bin/python3'
 ]])
 
 -- 不可視文字を非表示(colorscheme用)
-vim.opt.list = false
+vim.opt.list = true
 -- Leder Key
 vim.g.mapleader = ','
 

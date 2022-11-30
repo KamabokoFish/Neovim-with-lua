@@ -16,6 +16,8 @@ packer.startup(function(use)
   use "EdenEast/nightfox.nvim" -- Packer
   use 'folke/tokyonight.nvim'
   use { "ellisonleao/gruvbox.nvim" }
+  use 'ishan9299/nvim-solarized-lua'
+
   use 'frenzyexists/aquarium-vim'
   use 'folke/lsp-colors.nvim'
 
@@ -33,7 +35,7 @@ packer.startup(function(use)
   use 'lambdalisue/fern.vim'
   use 'lambdalisue/fern-renderer-nerdfont.vim'
   use 'lambdalisue/glyph-palette.vim'
-  use 'yuki-yano/fern-preview.vim'
+  -- use 'yuki-yano/fern-preview.vim'
   
   use {
     "williamboman/mason.nvim",
