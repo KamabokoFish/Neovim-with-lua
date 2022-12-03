@@ -43,22 +43,23 @@ end
 -- LSP-Diagnostic Settings
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
-  virtual_text =true,
   underline = true,
   update_in_insert = false,
-  virtual_text = { spacing = 2, prefix = "◆" },
+  virtual_text = { spacing = 2, prefix = "◆"},
   severity_sort = true,
 }
 )
 
 vim.diagnostic.config({
-  virtual_text = {
-    prefix = '◆'
-  },
+  virtual_text = { spacing = 2, prefix = "◆" },
+  severity_sort = true,
   underline = true,
-  virtual_text = true,
   update_in_insert = false,
   float = {
     source = "always", -- Or "if_many"
   },
 })
+
+
+  --virtual_text = { spacing = 2, prefix = "◆" ,severity='Error'},
+  -- メモ：VitualTextの表示をいじってる➔ErrorレベルのみTextを表示指定
