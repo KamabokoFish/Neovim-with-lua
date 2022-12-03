@@ -1,13 +1,19 @@
-vim.g.solarized_visibility = 'low'
-vim.g.solarized_diffmode = 'normal'
-vim.g.solarized_statusline = 'flat'
+-- vim.g.solarized_visibility = 'low'
+-- vim.g.solarized_diffmode = 'normal'
+-- vim.g.solarized_statusline = 'flat'
 
-vim.cmd('colorscheme solarized')
+-- vim.cmd('colorscheme solarized')
 
-vim.cmd([[
-highlight NonText ctermbg=NONE guibg=NONE
-highlight LineNr ctermbg=NONE guibg=NONE
-highlight SignCulumn ctermbg=NONE guibg=NONE
-highlight EndOfBuffer ctermbg=NONE guibg=NONE
-highlight VertSplit ctermbg=NONE guibg=NONE
-]])
+-- vim.cmd([[
+-- highlight NonText ctermbg=NONE guibg=NONE
+-- highlight LineNr ctermbg=NONE guibg=NONE
+-- highlight SignCulumn ctermbg=NONE guibg=NONE
+-- highlight EndOfBuffer ctermbg=NONE guibg=NONE
+-- highlight VertSplit ctermbg=NONE guibg=NONE
+-- ]])
+
+-- neosolarizedを読み込み
+require('neosolarized').setup({
+    comment_italics = true,
+    background_set = true,
+})
