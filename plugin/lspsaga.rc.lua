@@ -9,7 +9,7 @@ saga.init_lsp_saga{
 border_style = "single",
 --the range of 0 for fully opaque window (disabled) to 100 for fully
 --transparent background. Values between 0-30 are typically most useful.
-saga_winblend = 2,
+saga_winblend = 20,
 -- when cursor in saga window you config these to move
 move_in_saga = { prev = '<C-p>',next = '<C-n>'},
 diagnostic_header = { " ", " ", " ", "ﴞ " },

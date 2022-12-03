@@ -12,6 +12,7 @@ telescope.setup({
       },
   },
 })
+telescope.load_extension("frecency")
 
 vim.keymap.set('n', '<leader>f',
   function()
@@ -28,10 +29,4 @@ vim.keymap.set('n', ',a', function()
   builtin.diagnostics()
 end)
 
-vim.keymap.set('n', ',o', function()
-  builtin.oldfiles({hidden = true})
-end)
-
-vim.keymap.set('n', ',l', function()
-  builtin.buffers({hidden = true})
-end)
+vim.keymap.set("n", "<leader>l", "<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>", {noremap = true, silent = true})

@@ -3,4 +3,5 @@ if (not status) then return end
 
 color.setup{
   'css';
+  'scss';
 }

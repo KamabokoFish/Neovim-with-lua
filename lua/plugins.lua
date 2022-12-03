@@ -17,8 +17,8 @@ packer.startup(function(use)
   use 'folke/tokyonight.nvim'
   use { "ellisonleao/gruvbox.nvim" }
   use 'ishan9299/nvim-solarized-lua'
-
-  use 'frenzyexists/aquarium-vim'
+  use 'tjdevries/colorbuddy.nvim'
+  use 'svrana/neosolarized.nvim'
   use 'folke/lsp-colors.nvim'
 
   use 'lukas-reineke/indent-blankline.nvim'
@@ -58,7 +58,7 @@ packer.startup(function(use)
 
   use 'onsails/lspkind.nvim'
 
-   use({
+  use({
     "glepnir/lspsaga.nvim",
     branch = "main",
     })
@@ -84,6 +84,10 @@ packer.startup(function(use)
   -- use 'MunifTanjim/prettier.nvim'
 
   use 'nvim-telescope/telescope.nvim'
+  use {
+    "nvim-telescope/telescope-frecency.nvim",
+    requires = {"kkharji/sqlite.lua"}
+  }
 
   use 'windwp/nvim-autopairs' 
   use "terrortylor/nvim-comment"
