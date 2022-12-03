@@ -134,11 +134,6 @@ _G.packer_plugins = {
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/glyph-palette.vim",
     url = "https://github.com/lambdalisue/glyph-palette.vim"
   },
-  ["gruvbox.nvim"] = {
-    loaded = true,
-    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
-    url = "https://github.com/ellisonleao/gruvbox.nvim"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -223,11 +218,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
-  },
-  ["nvim-solarized-lua"] = {
-    loaded = true,
-    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/nvim-solarized-lua",
-    url = "https://github.com/ishan9299/nvim-solarized-lua"
   },
   ["nvim-treesitter"] = {
     loaded = true,

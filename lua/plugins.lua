@@ -15,8 +15,8 @@ packer.startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
   use "EdenEast/nightfox.nvim" -- Packer
   use 'folke/tokyonight.nvim'
-  use { "ellisonleao/gruvbox.nvim" }
-  use 'ishan9299/nvim-solarized-lua'
+  -- use { "ellisonleao/gruvbox.nvim" }
+  -- use 'ishan9299/nvim-solarized-lua'
   use 'tjdevries/colorbuddy.nvim'
   use 'svrana/neosolarized.nvim'
   use 'folke/lsp-colors.nvim'
