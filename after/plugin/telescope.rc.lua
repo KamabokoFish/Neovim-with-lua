@@ -5,10 +5,12 @@ local builtin = require('telescope.builtin')
 
 telescope.setup({
   defaults ={
+      winblend = 5,
       layout_strategy = 'vertical',
-      layout_config = { height = 0.7,width = 0.7 },
+      layout_config = { height = 0.8,width = 0.8 },
       file_ignore_patterns = {
-        ".git"
+        "^.git/",
+        "^node_modules/",
       },
   },
 })

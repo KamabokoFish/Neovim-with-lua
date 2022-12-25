@@ -15,10 +15,11 @@ packer.startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
   use "EdenEast/nightfox.nvim" -- Packer
   use 'folke/tokyonight.nvim'
-  -- use { "ellisonleao/gruvbox.nvim" }
-  -- use 'ishan9299/nvim-solarized-lua'
-  use 'tjdevries/colorbuddy.nvim'
-  use 'svrana/neosolarized.nvim'
+  use 'ishan9299/nvim-solarized-lua'
+  use 'shaunsingh/nord.nvim'
+  use 'rose-pine/neovim'
+  -- use 'tjdevries/colorbuddy.nvim'
+  -- use 'svrana/neosolarized.nvim'
   use 'folke/lsp-colors.nvim'
 
   use 'lukas-reineke/indent-blankline.nvim'
@@ -35,7 +36,6 @@ packer.startup(function(use)
   use 'lambdalisue/fern.vim'
   use 'lambdalisue/fern-renderer-nerdfont.vim'
   use 'lambdalisue/glyph-palette.vim'
-  -- use 'yuki-yano/fern-preview.vim'
   
   use {
     "williamboman/mason.nvim",
@@ -67,7 +67,7 @@ packer.startup(function(use)
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
-  use 'digitaltoad/vim-pug' -- .jadeファイルのシンタックス用
+  use 'digitaltoad/vim-pug'
   use 'kyazdani42/nvim-web-devicons'
 
   use {
@@ -89,14 +89,19 @@ packer.startup(function(use)
     requires = {"kkharji/sqlite.lua"}
   }
 
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+  }
+
   use 'windwp/nvim-autopairs' 
   use "terrortylor/nvim-comment"
   use 'machakann/vim-sandwich'
-  use {'kevinhwang91/nvim-hlslens'}
-  -- use 'mattn/emmet-vim'
+  use 'kevinhwang91/nvim-hlslens'
 
   use 'norcalli/nvim-colorizer.lua' 
   use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
+  use 'simeji/winresizer'
   
 end)

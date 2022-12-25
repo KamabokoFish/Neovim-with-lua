@@ -1,7 +1,24 @@
 local status, null_ls = pcall(require, "null-ls")
 if (not status) then return end
 
--- 非同期format on saveを一時的にオフにしている
+null_ls.setup({
+    -- add your sources / config options here
+    sources = {
+        null_ls.builtins.diagnostics.eslint.with({
+        prefer_local = "node_modules/.bin",
+    }),
+        null_ls.builtins.formatting.prettier,
+        -- null_ls.builtins.diagnostics.rubocop,
+        -- null_ls.builtins.formatting.rubocop,
+    },
+    debug = false,
+})
+
+-- 以下はformat on save を使う場合の記述
+
+-- local status, null_ls = pcall(require, "null-ls")
+-- if (not status) then return end
+
 
 -- local async_formatting = function(bufnr)
 --     bufnr = bufnr or vim.api.nvim_get_current_buf()
@@ -34,30 +51,29 @@ if (not status) then return end
 --     )
 -- end
 
-
 -- local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
-null_ls.setup({
-    -- add your sources / config options here
-    sources = {
-        null_ls.builtins.diagnostics.eslint.with({
-        prefer_local = "node_modules/.bin",
-    }),
-        null_ls.builtins.formatting.prettier,
-        -- null_ls.builtins.diagnostics.rubocop,
-        -- null_ls.builtins.formatting.rubocop,
-    },
-    debug = false,
-    -- on_attach = function(client, bufnr)
-    --     if client.supports_method("textDocument/formatting") then
-    --         vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
-    --         vim.api.nvim_create_autocmd("BufWritePost", {
-    --             group = augroup,
-    --             buffer = bufnr,
-    --             callback = function()
-    --                 async_formatting(bufnr)
-    --             end,
-    --         })
-    --     end
-    -- end,
-})
+-- null_ls.setup({
+--     -- add your sources / config options here
+--     sources = {
+--         null_ls.builtins.diagnostics.eslint.with({
+--         prefer_local = "node_modules/.bin",
+--     }),
+--         null_ls.builtins.formatting.prettier,
+--         -- null_ls.builtins.diagnostics.rubocop,
+--         -- null_ls.builtins.formatting.rubocop,
+--     },
+--     debug = false,
+--     on_attach = function(client, bufnr)
+--         if client.supports_method("textDocument/formatting") then
+--             vim.api.nvim_clear_autocmds({ group = augroup, buffer = bufnr })
+--             vim.api.nvim_create_autocmd("BufWritePost", {
+--                 group = augroup,
+--                 buffer = bufnr,
+--                 callback = function()
+--                     async_formatting(bufnr)
+--                 end,
+--             })
+--         end
+--     end,
+-- })

@@ -10,7 +10,8 @@ cmp.setup({
     end,
   },
   window = {
-        -- documentation = cmp.config.window.bordered(),
+        -- completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
       },
   sources = {
     { name = "nvim_lsp" },
@@ -24,7 +25,7 @@ cmp.setup({
     ['<C-b>'] = cmp.mapping.scroll_docs(4),
     ["<C-p>"] = cmp.mapping.select_prev_item(),
     ["<C-n>"] = cmp.mapping.select_next_item(),
-    ["<Tab>"] = cmp.mapping.select_next_item(),
+    -- ["<Tab>"] = cmp.mapping.select_next_item(),
     ['<C-l>'] = cmp.mapping.complete(),
     ['<C-e>'] = cmp.mapping.abort(),
     ["<C-y>"] = cmp.mapping.confirm({ select = true }),
@@ -63,3 +64,8 @@ let g:vsnip_filetypes = {}
 let g:vsnip_filetypes.javascript = ['javascriptreact']
 let g:vsnip_filetypes.typescript = ['typescriptreact']
 ]])
+
+vim.cmd [[
+  set completeopt=menuone,noinsert,noselect
+  highlight! default link CmpItemKind CmpItemMenuDefault
+]]

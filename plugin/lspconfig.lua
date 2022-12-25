@@ -1,7 +1,7 @@
 local on_attach = function(client, bufnr)
 
   -- LSPのフォーマットを無効
-   client.server_capabilities.documentFormattingProvider = false
+  client.server_capabilities.documentFormattingProvider = false
 
   local set = vim.keymap.set
   --set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
@@ -45,13 +45,13 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
   underline = true,
   update_in_insert = false,
-  virtual_text = { spacing = 2, prefix = "◆"},
+  virtual_text = { spacing = 2, prefix = "◆",severity = 'Error'},
   severity_sort = true,
 }
 )
 
 vim.diagnostic.config({
-  virtual_text = { spacing = 2, prefix = "◆" },
+  virtual_text = { spacing = 2, prefix = "◆",severity = 'Error'},
   severity_sort = true,
   underline = true,
   update_in_insert = false,

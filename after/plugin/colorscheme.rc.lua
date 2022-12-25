@@ -7,12 +7,14 @@
 --   transparent_background = false,
 --   styles = {
 -- 		comments = { "italic" },
+--     conditionals = { "italic" },
+--     functions = { "italic" },
 --   },
 --   term_colors = true,
 --   integrations ={
 --       gitsigns = true,
 --       telescope = true,
--- 	  treesitter = true,
+--       treesitter = true,
 --       neotree = false,
 --       lsp_saga = false,
 --       cmp = true,
@@ -30,15 +32,15 @@
 -- 				information = { "nocombine" },
 -- 			},
 -- 			underlines = {
--- 				errors = { "undercurl" },
--- 				hints = { "undercurl" },
--- 				warnings = { "undercurl" },
--- 				information = { "undercurl" },
+-- 				errors = { "underline" },
+-- 				hints = { "underline" },
+-- 				warnings = { "underline" },
+-- 				information = { "underline" },
 -- 			},
 --       },
 -- },
 -- })
--- -- colorschemeをセットする際に、vim.opt.list=falseにしておかないとタブ文字の色が目立つ
+-- colorschemeをセットする際に、vim.opt.list=falseにしておかないとタブ文字の色が目立つ
 -- vim.cmd([[colorscheme catppuccin]])
 
 -- Default options
@@ -82,20 +84,20 @@
 -- require("tokyonight").setup({
 --   -- your configuration comes here
 --   -- or leave it empty to use the default settings
---   style = "storm", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
+--   style = "moon", -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
 --   light_style = "day", -- The theme is used when the background is set to light
 --   transparent = false, -- Enable this to disable setting the background color
 --   terminal_colors = true, -- Configure the colors used when opening a `:terminal` in Neovim
 --   styles = {
 --     -- Style to be applied to different syntax groups
 --     -- Value is any valid attr-list value for `:help nvim_set_hl`
---     comments = { italic = true },
---     keywords = { italic = false },
+--     comments = { italic = false },
+--     keywords = { italic = true },
 --     functions = { italic = true },
 --     variables = {italic = false },
 --     -- Background styles. Can be "dark", "transparent" or "normal"
 --     sidebars = "dark", -- style for sidebars, see below
---     floats = "transparent", -- style for floating windows
+--     floats = "normal", -- style for floating windows
 --   },
 --   sidebars = { "qf", "help" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
 --   day_brightness = 0.3, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
@@ -115,4 +117,62 @@
 --   on_highlights = function(highlights, colors) end,
 -- })
 -- -- Lua
--- vim.cmd[[colorscheme tokyonight]]
+-- vim.cmd[[colorscheme tokyonight-moon]]
+
+-- nord.nvim
+-- vim.g.nord_contrast = false
+-- vim.g.nord_borders = false
+-- vim.g.nord_disable_background = false
+-- vim.g.nord_italic = false
+-- vim.g.nord_uniform_diff_background = true
+-- vim.g.nord_bold = true
+
+-- -- Load the colorscheme
+-- require('nord').set()
+
+-- vim.cmd[[colorscheme nord]]
+
+-- rose-pineをデフォルトのテーマに設定○
+require('rose-pine').setup({
+	--- @usage 'main' | 'moon'
+	dark_variant = 'moon',
+	bold_vert_split = false,
+	dim_nc_background = false,
+	disable_background = false,
+	disable_float_background = false,
+	disable_italics = true,
+
+	--- @usage string hex value or named color from rosepinetheme.com/palette
+	groups = {
+		background = 'base',
+		panel = 'surface',
+		border = 'highlight_med',
+		comment = 'muted',
+		link = 'iris',
+		punctuation = 'subtle',
+
+		error = 'love',
+		hint = 'iris',
+		info = 'foam',
+		warn = 'gold',
+
+		headings = {
+			h1 = 'iris',
+			h2 = 'foam',
+			h3 = 'rose',
+			h4 = 'gold',
+			h5 = 'pine',
+			h6 = 'foam',
+		}
+		-- or set all headings at once
+		-- headings = 'subtle'
+	},
+
+	-- Change specific vim highlight groups
+	highlight_groups = {
+		ColorColumn = { bg = 'rose' }
+	}
+})
+
+-- set colorscheme after options
+vim.cmd('colorscheme rose-pine')

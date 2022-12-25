@@ -56,3 +56,5 @@ keymap.set('', 'sl', '<C-w>l')
 
 -- Emacs like keybinding
 keymap.set('i', '<C-f>', '<Right>')
+-- jjでEscする
+keymap.set('i','jj','<Esc>')
