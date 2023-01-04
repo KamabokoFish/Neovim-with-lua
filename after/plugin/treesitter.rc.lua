@@ -9,9 +9,10 @@ treesitter.setup {
     disable = {},
   },
 	indent ={
-		enable =true
+		enable =true,
+    disable ={"html"},
 	},
   autotag = {
-    enable = false,
+    enable = true,
   },
 }

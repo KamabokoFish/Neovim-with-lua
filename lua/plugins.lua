@@ -54,7 +54,7 @@ packer.startup(function(use)
 
   use 'hrsh7th/vim-vsnip'
   -- vsnip exensions for react.
-  use "rafamadriz/friendly-snippets"
+  -- use "rafamadriz/friendly-snippets"
 
   use 'onsails/lspkind.nvim'
 
@@ -95,11 +95,13 @@ packer.startup(function(use)
   }
 
   use 'windwp/nvim-autopairs' 
+  use 'windwp/nvim-ts-autotag'
   use "terrortylor/nvim-comment"
   use 'machakann/vim-sandwich'
   use 'kevinhwang91/nvim-hlslens'
 
   use 'norcalli/nvim-colorizer.lua' 
+  use 'kdheepak/lazygit.nvim'
   use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
   use 'simeji/winresizer'
