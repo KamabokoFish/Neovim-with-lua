@@ -1,22 +1,33 @@
+-- Mappings.
+-- See `:help vim.diagnostic.*` for documentation on any of the below functions
+local opts = { noremap=true, silent=true }
+
+vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts) --行のdiagnosticを表示
+vim.keymap.set('n', '[g', vim.diagnostic.goto_prev, opts)
+vim.keymap.set('n', ']g', vim.diagnostic.goto_next, opts)
+
+-- Use an on_attach function to only map the following keys
+-- after the language server attaches to the current buffer
 local on_attach = function(client, bufnr)
 
   -- LSPのフォーマットを無効
   client.server_capabilities.documentFormattingProvider = false
 
-  local set = vim.keymap.set
-  --set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>")
-  -- set("n", "K", "<cmd>lua vim.lsp.buf.hover()<CR>")
-  -- set("n", "<C-m>", "<cmd>lua vim.lsp.buf.signature_help()<CR>")
-  --set("n", "gy", "<cmd>lua vim.lsp.buf.type_definition()<CR>")
-  -- set("n", "rn", "<cmd>lua vim.lsp.buf.rename()<CR>")
-  -- set("n", "ma", "<cmd>lua vim.lsp.buf.code_action()<CR>")
-  -- set("n", "gr", "<cmd>lua vim.lsp.buf.references()<CR>")
-  -- set("n", "<space>e", "<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>")
-  -- set("n", "[d", "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>")
-  -- set("n", "]d", "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>")
+  vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+  -- -- Mappings.
+  -- -- See `:help vim.lsp.*` for documentation on any of the below functions
+  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  -- vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, bufopts)
+  -- -- vim.keymap.set('n', 'gd', vim.lsp.buf.definition, bufopts)
+  vim.keymap.set('n', 'K', vim.lsp.buf.hover, bufopts)
+  -- vim.keymap.set('n', 'gi', vim.lsp.buf.implementation, bufopts)
+  -- vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
+  -- vim.keymap.set('n', 'gy', vim.lsp.buf.type_definition, bufopts)
+  vim.keymap.set('n', 'rn', vim.lsp.buf.rename, bufopts)
+  -- vim.keymap.set('n', 'ma', vim.lsp.buf.code_action, bufopts)
+  -- vim.keymap.set('n', 'gr', vim.lsp.buf.references, bufopts)
 
-    set("n", "<leader>mm", "<cmd>lua vim.lsp.buf.format()<CR>") --明示的に全体に対してnull-lsでフォーマット
-
+  vim.keymap.set('n', '<leader>mm', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
 local capabilities = require("cmp_nvim_lsp").default_capabilities()

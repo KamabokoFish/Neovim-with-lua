@@ -1,47 +1,56 @@
 
--- local status, cat = pcall(require, "catppuccin")
--- if (not status) then return end
 
--- cat.setup({
--- 	flavour = "macchiato",
---   transparent_background = false,
---   styles = {
--- 		comments = { "italic" },
---     conditionals = { "italic" },
---     functions = { "italic" },
---   },
---   term_colors = true,
---   integrations ={
---       gitsigns = true,
---       telescope = true,
---       treesitter = true,
---       neotree = false,
---       lsp_saga = false,
---       cmp = true,
--- 			fern = true,
--- 			indent_blankline = {
--- 			enabled = true,
--- 			colored_indent_levels = false,
--- 			},
---       native_lsp = {
--- 			enabled = true,
--- 			virtual_text = {
--- 				errors = { "nocombine" },
--- 				hints = { "nocombine" },
--- 				warnings = { "nocombine" },
--- 				information = { "nocombine" },
--- 			},
--- 			underlines = {
--- 				errors = { "underline" },
--- 				hints = { "underline" },
--- 				warnings = { "underline" },
--- 				information = { "underline" },
--- 			},
---       },
--- },
+-- require("catppuccin").setup({
+--     flavour = "mocha", -- latte, frappe, macchiato, mocha
+--     background = { -- :h background
+--         light = "latte",
+--         dark = "mocha",
+--     },
+--     transparent_background = false,
+--     show_end_of_buffer = false, -- show the '~' characters after the end of buffers
+--     term_colors = true,
+--     dim_inactive = {
+--         enabled = false,
+--         shade = "dark",
+--         percentage = 0.15,
+--     },
+--     no_italic = false, -- Force no italic
+--     no_bold = false, -- Force no bold
+--     styles = {
+--         comments = {  },
+--         conditionals = { "italic" },
+--         loops = {},
+--         functions = {"italic"},
+--         keywords = {},
+--         strings = {},
+--         variables = {},
+--         numbers = {},
+--         booleans = {},
+--         properties = {},
+--         types = {},
+--         operators = {},
+--     },
+--     color_overrides = {},
+--     custom_highlights = {},
+--     integrations = {
+--         cmp = true,
+--         gitsigns = true,
+--         nvimtree = true,
+--         telescope = true,
+--         notify = false,
+--         mini = false,
+--             fern = true,
+--             indent_blankline = {
+--             enabled = false,
+--             colored_indent_levels = false,
+-- 		},
+
+--         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+--     },
 -- })
--- colorschemeをセットする際に、vim.opt.list=falseにしておかないとタブ文字の色が目立つ
--- vim.cmd([[colorscheme catppuccin]])
+
+-- -- setup must be called before loading
+-- vim.cmd.colorscheme "catppuccin"
 
 -- Default options
 -- require('nightfox').setup({
@@ -97,7 +106,7 @@
 --     variables = {italic = false },
 --     -- Background styles. Can be "dark", "transparent" or "normal"
 --     sidebars = "dark", -- style for sidebars, see below
---     floats = "normal", -- style for floating windows
+--     floats = "dark", -- style for floating windows
 --   },
 --   sidebars = { "qf", "help" }, -- Set a darker background on sidebar-like windows. For example: `["qf", "vista_kind", "terminal", "packer"]`
 --   day_brightness = 0.3, -- Adjusts the brightness of the colors of the **Day** style. Number between 0 and 1, from dull to vibrant colors
@@ -176,3 +185,5 @@ require('rose-pine').setup({
 
 -- set colorscheme after options
 vim.cmd('colorscheme rose-pine')
+
+

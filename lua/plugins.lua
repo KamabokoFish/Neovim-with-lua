@@ -24,7 +24,6 @@ packer.startup(function(use)
 
   use 'lukas-reineke/indent-blankline.nvim'
 
-  use 'lambdalisue/nerdfont.vim'
 
   use 'antoinemadec/FixCursorHold.nvim'
 
@@ -34,7 +33,9 @@ packer.startup(function(use)
   use 'zefei/vim-wintabs-powerline'
 
   use 'lambdalisue/fern.vim'
+  use 'lambdalisue/nerdfont.vim'
   use 'lambdalisue/fern-renderer-nerdfont.vim'
+  use 'kyazdani42/nvim-web-devicons'
   use 'lambdalisue/glyph-palette.vim'
   
   use {
@@ -68,7 +69,6 @@ packer.startup(function(use)
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
   }
   use 'digitaltoad/vim-pug'
-  use 'kyazdani42/nvim-web-devicons'
 
   use {
   "folke/trouble.nvim",

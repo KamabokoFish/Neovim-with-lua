@@ -6,6 +6,7 @@ treesitter.setup {
   -- ignore_install = { "html" },
   highlight = {
     enable = true,
+    additional_vim_regex_highlighting = false, -- catpuucin用
     disable = {},
   },
 	indent ={

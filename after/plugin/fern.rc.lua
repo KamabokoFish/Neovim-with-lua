@@ -11,11 +11,6 @@ augroup my-glyph-palette
   autocmd FileType nerdtree,startify call glyph_palette#apply()
 augroup END
 
-augroup fern-settings
-  autocmd!
-  autocmd FileType fern call s:fern_settings()
-augroup END
-
 function! s:fern_settings() abort
   nmap <silent> <buffer> dd <Plug>(fern-action-remove)
 endfunction
@@ -24,5 +19,4 @@ augroup fern-settings
   autocmd!
   autocmd FileType fern call s:fern_settings()
 augroup END
-
 ]])

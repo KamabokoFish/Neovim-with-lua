@@ -29,7 +29,7 @@ todo.setup{
   -- * keyword: highlights of the keyword
   -- * after: highlights after the keyword (todo text)
   highlight = {
-    multiline = true, -- enable multine todo comments
+    multiline = false, -- enable multine todo comments
     multiline_pattern = "^.", -- lua pattern to match the next multiline from the start of the matched keyword
     multiline_context = 10, -- extra lines that will be re-evaluated when changing a line
     before = "", -- "fg" or "bg" or empty

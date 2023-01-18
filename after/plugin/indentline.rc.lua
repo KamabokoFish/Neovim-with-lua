@@ -23,7 +23,7 @@ require("indent_blankline").setup {
         -- "IndentBlanklineIndent4",
         -- "IndentBlanklineIndent5",
         -- "IndentBlanklineIndent6",
-        -- "IndentBlanklineSpaceChar",
-        -- "IndentBlanklineSpaceCharBlankline",
+        "IndentBlanklineSpaceChar",
+        "IndentBlanklineSpaceCharBlankline",
     },
 }
