@@ -38,31 +38,8 @@ packer.startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
   use 'lambdalisue/glyph-palette.vim'
   
-  use {
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig",
-  }
 
-  -- use 'j-hui/fidget.nvim'
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-vsnip'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  -- use 'hrsh7th/cmp-cmdline'
-  -- use 'hrsh7th/cmp-nvim-lsp-signature-help'
 
-  use 'hrsh7th/vim-vsnip'
-  -- vsnip exensions for react.
-  -- use "rafamadriz/friendly-snippets"
-
-  use 'onsails/lspkind.nvim'
-
-  use({
-    "glepnir/lspsaga.nvim",
-    branch = "main",
-    })
 
   use {
     'nvim-treesitter/nvim-treesitter',
@@ -70,16 +47,7 @@ packer.startup(function(use)
   }
   use 'digitaltoad/vim-pug'
 
-  use {
-  "folke/trouble.nvim",
-  requires = "kyazdani42/nvim-web-devicons",
-}
 
-  --Linter + Formatter
-  use({
-    "jose-elias-alvarez/null-ls.nvim",
-    requires = { "nvim-lua/plenary.nvim" },
-  })
 
   -- use 'MunifTanjim/prettier.nvim'
 
