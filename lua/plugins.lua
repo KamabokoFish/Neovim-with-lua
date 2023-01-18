@@ -23,8 +23,6 @@ packer.startup(function(use)
   use 'folke/lsp-colors.nvim'
 
   use 'lukas-reineke/indent-blankline.nvim'
-
-
   use 'antoinemadec/FixCursorHold.nvim'
 
   use 'nvim-lualine/lualine.nvim' -- Statusline
@@ -37,9 +35,9 @@ packer.startup(function(use)
   use 'lambdalisue/fern-renderer-nerdfont.vim'
   use 'kyazdani42/nvim-web-devicons'
   use 'lambdalisue/glyph-palette.vim'
-  
 
-
+  -- coc.nvim
+  use {'neoclide/coc.nvim', branch = 'release'}
 
   use {
     'nvim-treesitter/nvim-treesitter',

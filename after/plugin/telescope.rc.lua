@@ -27,11 +27,11 @@ vim.keymap.set('n', ',r', function()
   builtin.live_grep({hidden = true})
 end)
 
-vim.keymap.set('n', ',a', function()
-  builtin.diagnostics()
-end)
+-- vim.keymap.set('n', ',a', function()
+--   builtin.diagnostics()
+-- end)
 
-vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
-vim.keymap.set('n','gy', builtin.lsp_type_definitions, {})
+-- vim.keymap.set('n', 'gd', builtin.lsp_definitions, {})
+-- vim.keymap.set('n','gy', builtin.lsp_type_definitions, {})
 
 vim.keymap.set("n", "<leader>l", "<Cmd>lua require('telescope').extensions.frecency.frecency()<CR>", {noremap = true, silent = true})
