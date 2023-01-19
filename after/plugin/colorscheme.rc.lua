@@ -1,5 +1,4 @@
 
-
 -- require("catppuccin").setup({
 --     flavour = "mocha", -- latte, frappe, macchiato, mocha
 --     background = { -- :h background
@@ -52,43 +51,6 @@
 -- -- setup must be called before loading
 -- vim.cmd.colorscheme "catppuccin"
 
--- Default options
--- require('nightfox').setup({
---   options = {
---     -- Compiled file's destination location
---     compile_path = vim.fn.stdpath("cache") .. "/nightfox",
---     compile_file_suffix = "_compiled", -- Compiled file suffix
---     transparent = false,    -- Disable setting background
---     terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
---     dim_inactive = false,   -- Non focused panes set to alternative background
---     styles = {              -- Style to be applied to different syntax groups
---       comments = "italic",    -- Value is any valid attr-list value `:help attr-list`
---       conditionals = "italic",
---       constants = "NONE",
---       functions = "italic",
---       keywords = "NONE",
---       numbers = "NONE",
---       operators = "NONE",
---       strings = "NONE",
---       types = "NONE",
---       variables = "NONE",
---     },
---     inverse = {             -- Inverse highlight for different types
---       match_paren = false,
---       visual = false,
---       search = false,
---     },
---     modules = {             -- List of various plugins and additional options
--- 		 lsp_saga = false,
---     },
---   },
---   palettes = {},
---   specs = {},
---   groups = {},
--- })
-
--- -- setup must be called before loading
--- vim.cmd("colorscheme duskfox")
 
 -- require("tokyonight").setup({
 --   -- your configuration comes here
@@ -128,62 +90,62 @@
 -- -- Lua
 -- vim.cmd[[colorscheme tokyonight-moon]]
 
--- nord.nvim
--- vim.g.nord_contrast = false
--- vim.g.nord_borders = false
--- vim.g.nord_disable_background = false
--- vim.g.nord_italic = false
--- vim.g.nord_uniform_diff_background = true
--- vim.g.nord_bold = true
-
--- -- Load the colorscheme
--- require('nord').set()
-
--- vim.cmd[[colorscheme nord]]
-
 -- rose-pineをデフォルトのテーマに設定○
-require('rose-pine').setup({
-	--- @usage 'main' | 'moon'
-	dark_variant = 'moon',
-	bold_vert_split = false,
-	dim_nc_background = false,
-	disable_background = false,
-	disable_float_background = false,
-	disable_italics = true,
+-- require('rose-pine').setup({
+-- 	--- @usage 'main' | 'moon'
+-- 	dark_variant = 'moon',
+-- 	bold_vert_split = false,
+-- 	dim_nc_background = false,
+-- 	disable_background = false,
+-- 	disable_float_background = false,
+-- 	disable_italics = true,
 
-	--- @usage string hex value or named color from rosepinetheme.com/palette
-	groups = {
-		background = 'base',
-		panel = 'surface',
-		border = 'highlight_med',
-		comment = 'muted',
-		link = 'iris',
-		punctuation = 'subtle',
+-- 	--- @usage string hex value or named color from rosepinetheme.com/palette
+-- 	groups = {
+-- 		background = 'base',
+-- 		panel = 'surface',
+-- 		border = 'highlight_med',
+-- 		comment = 'muted',
+-- 		link = 'iris',
+-- 		punctuation = 'subtle',
 
-		error = 'love',
-		hint = 'iris',
-		info = 'foam',
-		warn = 'gold',
+-- 		error = 'love',
+-- 		hint = 'iris',
+-- 		info = 'foam',
+-- 		warn = 'gold',
 
-		headings = {
-			h1 = 'iris',
-			h2 = 'foam',
-			h3 = 'rose',
-			h4 = 'gold',
-			h5 = 'pine',
-			h6 = 'foam',
-		}
-		-- or set all headings at once
-		-- headings = 'subtle'
-	},
+-- 		headings = {
+-- 			h1 = 'iris',
+-- 			h2 = 'foam',
+-- 			h3 = 'rose',
+-- 			h4 = 'gold',
+-- 			h5 = 'pine',
+-- 			h6 = 'foam',
+-- 		}
+-- 		-- or set all headings at once
+-- 		-- headings = 'subtle'
+-- 	},
 
-	-- Change specific vim highlight groups
-	highlight_groups = {
-		ColorColumn = { bg = 'rose' }
-	}
-})
+-- 	-- Change specific vim highlight groups
+-- 	highlight_groups = {
+-- 		ColorColumn = { bg = 'rose' }
+-- 	}
+-- })
 
--- set colorscheme after options
-vim.cmd('colorscheme rose-pine')
+-- -- set colorscheme after options
+-- vim.cmd('colorscheme rose-pine')
 
+-- everforestの設定
+vim.cmd([[
+
+set background=dark
+let g:everforest_enable_italic = 1
+let g:everforest_disable_italic_comment = 1 
+let g:everforest_background = 'hard'
+let g:everforest_diagnostic_text_highlight = 0 "textハイライトを有効化
+let g:everforest_better_performance = 1
+
+colorscheme everforest
+
+]])
 

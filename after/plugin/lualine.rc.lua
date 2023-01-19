@@ -3,7 +3,7 @@ if (not status) then return end
 
 require('lualine').setup {
   options = {
-    theme = 'rose-pine',
+    theme = 'everforest',
   --   -- theme ='solarized_dark'
   },
 }

@@ -1,5 +1,5 @@
 {
-  "diagnostic.virtualText":true,
+  "diagnostic.virtualText":false,
   "diagnostic.virtualTextCurrentLineOnly":false,	
   "diagnostic.virtualTextLevel":"warning",
   "diagnostic.virtualTextPrefix":"◆",

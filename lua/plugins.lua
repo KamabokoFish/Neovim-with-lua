@@ -13,11 +13,12 @@ packer.startup(function(use)
   use 'nvim-lua/plenary.nvim' -- Common 
 
   use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
-  use "EdenEast/nightfox.nvim" -- Packer
-  use 'folke/tokyonight.nvim'
+  -- use "EdenEast/nightfox.nvim" -- Packer
+  -- use 'folke/tokyonight.nvim'
   use 'ishan9299/nvim-solarized-lua'
-  use 'shaunsingh/nord.nvim'
+  -- use 'shaunsingh/nord.nvim'
   use 'rose-pine/neovim'
+  use 'sainnhe/everforest'
   -- use 'tjdevries/colorbuddy.nvim'
   -- use 'svrana/neosolarized.nvim'
   use 'folke/lsp-colors.nvim'
@@ -45,10 +46,6 @@ packer.startup(function(use)
   }
   use 'digitaltoad/vim-pug'
 
-
-
-  -- use 'MunifTanjim/prettier.nvim'
-
   use 'nvim-telescope/telescope.nvim'
   use {
     "nvim-telescope/telescope-frecency.nvim",
@@ -71,5 +68,6 @@ packer.startup(function(use)
   use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
   use 'simeji/winresizer'
-  
+
+  use 'eandrju/cellular-automaton.nvim' 
 end)
