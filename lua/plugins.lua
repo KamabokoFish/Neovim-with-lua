@@ -40,6 +40,7 @@ packer.startup(function(use)
   -- coc.nvim
   use {'neoclide/coc.nvim', branch = 'release'}
 
+
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,

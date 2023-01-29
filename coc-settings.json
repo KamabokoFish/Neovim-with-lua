@@ -1,4 +1,5 @@
 {
+  "coc.preferences.extensionUpdateCheck":"weekly",	
   "diagnostic.virtualText":false,
   "diagnostic.virtualTextCurrentLineOnly":false,	
   "diagnostic.virtualTextLevel":"warning",
@@ -12,7 +13,6 @@
   "typescript.format.enable":false,
   "javascript.format.enable":false,
   "typescript.autoClosingTags":false,
-  "prettier.resolveGlobalModules":true,
   "suggest.completionItemKindLabels": {
     "function": "\uf794",
     "method": "\uf6a6",
