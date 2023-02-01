@@ -1,10 +1,9 @@
 ### My Neovim Config with Lua..(>ω<)
 
 ##### Features
-- Coc.nvim　→　Builtin LSP
-  - Modern Plugins with LSP.
-- New Colorscheme.
-- null-ls,lspsaga,Telescope,etc...
+- Config written in Lua.
+- Coc.nvim (sometimes LSP).
+- Modern Plugins.
 - Packer.nvim.  
 
 ##### images

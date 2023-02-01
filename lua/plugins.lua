@@ -12,7 +12,7 @@ packer.startup(function(use)
 
   use 'nvim-lua/plenary.nvim' -- Common 
 
-  use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
+  -- use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
   -- use "EdenEast/nightfox.nvim" -- Packer
   -- use 'folke/tokyonight.nvim'
   use 'ishan9299/nvim-solarized-lua'
@@ -40,7 +40,6 @@ packer.startup(function(use)
   -- coc.nvim
   use {'neoclide/coc.nvim', branch = 'release'}
 
-
   use {
     'nvim-treesitter/nvim-treesitter',
     run = function() require('nvim-treesitter.install').update({ with_sync = true }) end,
@@ -61,7 +60,14 @@ packer.startup(function(use)
   use 'windwp/nvim-autopairs' 
   use 'windwp/nvim-ts-autotag'
   use "terrortylor/nvim-comment"
-  use 'machakann/vim-sandwich'
+  -- use 'machakann/vim-sandwich'
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+    config = function()
+    end
+  })
+
   use 'kevinhwang91/nvim-hlslens'
 
   use 'norcalli/nvim-colorizer.lua' 

@@ -3,7 +3,9 @@ vim.cmd("autocmd!")
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
+
 vim.opt.number = true
+vim.wo.number = true
 vim.wo.relativenumber = false
 vim.opt.mouse = 'a'
 vim.opt.title = true
@@ -40,11 +42,10 @@ vim.cmd([[
 
 -- 不可視文字を非表示(colorscheme用)
 vim.opt.list = false
--- Leder Key
+-- Leader Key
 vim.g.mapleader = ','
 
 local keymap = vim.keymap
-
 -- キーバインド
 -- 画面分割
 keymap.set('n', 'ss', ':split<Return><C-w>w')
@@ -55,7 +56,7 @@ keymap.set('', 'sk', '<C-w>k')
 keymap.set('', 'sj', '<C-w>j')
 keymap.set('', 'sl', '<C-w>l')
 
--- Emacs like keybinding
+-- Emacs風
 keymap.set('i', '<C-f>', '<Right>')
 -- jjでEscする
 keymap.set('i','jj','<Esc>')

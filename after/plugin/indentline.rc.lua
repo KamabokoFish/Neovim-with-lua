@@ -1,3 +1,5 @@
+local status,indent = pcall(require,"indent_blankline")
+if (not status) then return end
 
 vim.cmd([[
 let g:indent_blankline_char = '│'
@@ -13,7 +15,7 @@ let g:indent_blankline_char = '│'
 -- vim.cmd [[highlight IndentBlanklineIndent5 guifg=#25383C gui=nocombine]]
 -- vim.cmd [[highlight IndentBlanklineIndent6 guifg=#25383C gui=nocombine]]
 
-require("indent_blankline").setup {
+indent.setup {
   -- char_highlight_list = {
   -- -- 指定した色を読み込み
   --       "IndentBlanklineChar",
