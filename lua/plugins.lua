@@ -16,7 +16,6 @@ packer.startup(function(use)
   -- use "EdenEast/nightfox.nvim" -- Packer
   -- use 'folke/tokyonight.nvim'
   use 'ishan9299/nvim-solarized-lua'
-  -- use 'shaunsingh/nord.nvim'
   use 'rose-pine/neovim'
   use 'sainnhe/everforest'
   -- use 'tjdevries/colorbuddy.nvim'
@@ -54,10 +53,10 @@ packer.startup(function(use)
   use 'xiyaowong/telescope-emoji.nvim'
   use 'fannheyward/telescope-coc.nvim'
 
-  use {
-    "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
-  }
+  -- use {
+  --   "folke/todo-comments.nvim",
+  --   requires = "nvim-lua/plenary.nvim",
+  -- }
 
   use 'windwp/nvim-autopairs' 
   use 'windwp/nvim-ts-autotag'

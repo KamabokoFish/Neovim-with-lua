@@ -135,7 +135,6 @@
 -- -- set colorscheme after options
 -- vim.cmd('colorscheme rose-pine')
 
--- everforestの設定
 vim.cmd([[
 
 set background=dark
@@ -148,4 +147,3 @@ let g:everforest_better_performance = 1
 colorscheme everforest
 
 ]])
-
