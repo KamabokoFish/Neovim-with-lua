@@ -51,6 +51,8 @@ packer.startup(function(use)
     "nvim-telescope/telescope-frecency.nvim",
     requires = {"kkharji/sqlite.lua"}
   }
+  use 'xiyaowong/telescope-emoji.nvim'
+  use 'fannheyward/telescope-coc.nvim'
 
   use {
     "folke/todo-comments.nvim",
@@ -69,6 +71,8 @@ packer.startup(function(use)
   })
 
   use 'kevinhwang91/nvim-hlslens'
+
+  use 'prettier/vim-prettier'
 
   use 'norcalli/nvim-colorizer.lua' 
   use 'kdheepak/lazygit.nvim'
