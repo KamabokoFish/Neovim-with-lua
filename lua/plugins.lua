@@ -12,18 +12,18 @@ packer.startup(function(use)
 
   use 'nvim-lua/plenary.nvim' -- Common 
 
-  use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
-  use "EdenEast/nightfox.nvim" -- Packer
-  use 'folke/tokyonight.nvim'
+  -- use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
+  -- use "EdenEast/nightfox.nvim" -- Packer
+  -- use 'folke/tokyonight.nvim'
+  -- use 'shaunsingh/nord.nvim'
   use 'ishan9299/nvim-solarized-lua'
-  use 'shaunsingh/nord.nvim'
   use 'rose-pine/neovim'
-  -- use 'tjdevries/colorbuddy.nvim'
-  -- use 'svrana/neosolarized.nvim'
+  use 'sainnhe/everforest'
   use 'folke/lsp-colors.nvim'
-
+  -- use 'svrana/neosolarized.nvim'
+  -- use 'tjdevries/colorbuddy.nvim'
+  --
   use 'lukas-reineke/indent-blankline.nvim'
-
 
   use 'antoinemadec/FixCursorHold.nvim'
 
@@ -44,15 +44,13 @@ packer.startup(function(use)
     "neovim/nvim-lspconfig",
   }
 
-  -- use 'j-hui/fidget.nvim'
   use 'hrsh7th/nvim-cmp'
   use 'hrsh7th/cmp-nvim-lsp'
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
-  -- use 'hrsh7th/cmp-cmdline'
-  -- use 'hrsh7th/cmp-nvim-lsp-signature-help'
-
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/cmp-nvim-lsp-signature-help'
   use 'hrsh7th/vim-vsnip'
   -- vsnip exensions for react.
   -- use "rafamadriz/friendly-snippets"
@@ -70,18 +68,11 @@ packer.startup(function(use)
   }
   use 'digitaltoad/vim-pug'
 
-  use {
-  "folke/trouble.nvim",
-  requires = "kyazdani42/nvim-web-devicons",
-}
-
   --Linter + Formatter
   use({
     "jose-elias-alvarez/null-ls.nvim",
     requires = { "nvim-lua/plenary.nvim" },
   })
-
-  -- use 'MunifTanjim/prettier.nvim'
 
   use 'nvim-telescope/telescope.nvim'
   use {
@@ -89,21 +80,20 @@ packer.startup(function(use)
     requires = {"kkharji/sqlite.lua"}
   }
 
-  use {
-    "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
-  }
-
-  use 'windwp/nvim-autopairs' 
+  use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
   use "terrortylor/nvim-comment"
-  use 'machakann/vim-sandwich'
+  use "kylechui/nvim-surround"
+  use 'machakann/vim-highlightedyank'
+
   use 'kevinhwang91/nvim-hlslens'
 
-  use 'norcalli/nvim-colorizer.lua' 
+  use 'norcalli/nvim-colorizer.lua'
+
   use 'kdheepak/lazygit.nvim'
   use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
+
   use 'simeji/winresizer'
 
 end)

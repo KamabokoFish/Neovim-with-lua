@@ -21,11 +21,9 @@ saga.setup{
     outgoing = ' ',
     colors = {
       --float window normal background color
-      normal_bg = '#232136',
+      -- normal_bg = '#232136',
     },
     kind = {},
-    -- colors = require("catppuccin.groups.integrations.lsp_saga").custom_colors(),
-    -- kind = require("catppuccin.groups.integrations.lsp_saga").custom_kind(),
   },
 
   preview = {
@@ -77,12 +75,10 @@ saga.setup{
 }
 
 keymap("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", { silent = true })
--- keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { silent = true })
-keymap({"n","v"}, "ma", "<cmd>Lspsaga code_action<CR>", { silent = true })
--- keymap("n", "rn", "<cmd>Lspsaga rename<CR>", { silent = true })
-
--- keymap("n", "K", "<cmd>Lspsaga hover_doc ++quiet<CR>", { silent = true }) --エラー箇所で使うとうまく動作しない
--- keymap("n", "<space>e", "<cmd>Lspsaga show_line_diagnostics<CR>", { silent = true })
-
+keymap("n", "gd", "<cmd>Lspsaga goto_definition<CR>", { silent = true })
+keymap("n", "rn", "<cmd>Lspsaga rename<CR>", { silent = true })
+keymap("n", "K", "<cmd>Lspsaga hover_doc ++quiet<CR>", { silent = true }) 
+keymap("n", "<space>e", "<cmd>Lspsaga show_line_diagnostics<CR>", { silent = true })
+-- keymap({"n","v"}, "ma", "<cmd>Lspsaga code_action<CR>", { silent = true })
 -- keymap("n", "g[", "<cmd>Lspsaga diagnostic_jump_prev<CR>", { silent = true })
 -- keymap("n", "g]", "<cmd>Lspsaga diagnostic_jump_next<CR>", { silent = true })

@@ -4,6 +4,10 @@ local lspkind = require("lspkind")
 local cmp = require("cmp")
 
 cmp.setup({
+  completion = {
+    -- 4文字目から補完を開始
+    keyword_length = 3,
+  },
   snippet = {
     expand = function(args)
       vim.fn["vsnip#anonymous"](args.body)
@@ -15,20 +19,20 @@ cmp.setup({
       },
   sources = {
     { name = "nvim_lsp" },
-    { name = 'vsnip' }, -- For vsnip users.
+    { name = "vsnip" }, -- For vsnip users.
     { name = "buffer" },
     { name = "path" },
-    -- { name = 'nvim_lsp_signature_help' },
+    { name = "nvim_lsp_signature_help" },
   },
   mapping = cmp.mapping.preset.insert({
     ['<C-u>'] = cmp.mapping.scroll_docs(-4),
     ['<C-b>'] = cmp.mapping.scroll_docs(4),
-    ["<C-p>"] = cmp.mapping.select_prev_item(),
-    ["<C-n>"] = cmp.mapping.select_next_item(),
+    ['<C-p>'] = cmp.mapping.select_prev_item(),
+    ['<C-n>'] = cmp.mapping.select_next_item(),
     -- ["<Tab>"] = cmp.mapping.select_next_item(),
-    ['<C-l>'] = cmp.mapping.complete(),
-    ['<C-e>'] = cmp.mapping.abort(),
-    ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+    -- ['<C-l>'] = cmp.mapping.complete(),
+    -- ['<C-e>'] = cmp.mapping.abort(),
+    ['<CR>'] = cmp.mapping.confirm(),
   }),
   experimental = {
     ghost_text = false,
