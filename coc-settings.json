@@ -1,5 +1,8 @@
 {
-  "coc.preferences.extensionUpdateCheck":"weekly",	
+  "coc.preferences.extensionUpdateCheck":"weekly",
+  "suggest.noselect":true,
+  "suggest.floatConfig":{"winblend": 3},
+  "diagnostic.separateRelatedInformationAsDiagnostics":true,
   "diagnostic.virtualText":false,
   "diagnostic.virtualTextCurrentLineOnly":false,	
   "diagnostic.virtualTextLevel":"warning",
@@ -13,6 +16,7 @@
   "typescript.format.enable":false,
   "javascript.format.enable":false,
   "typescript.autoClosingTags":false,
+  "css.completion.completePropertyWithSemicolon":false,
   "suggest.completionItemKindLabels": {
     "function": "\uf794",
     "method": "\uf6a6",
@@ -38,6 +42,5 @@
     "reference": "\uf87a",
     "typeParameter": "\uf278",
     "default": "\uf29c"
-  },
-  "suggest.noselect":true
+  }
 }

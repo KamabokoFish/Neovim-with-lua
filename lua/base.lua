@@ -35,6 +35,9 @@ vim.opt.signcolumn = 'yes'
 vim.opt.hidden = true
 vim.opt.swapfile = false
 vim.opt.wrap = true
+
+-- float-transparent
+vim.opt.winblend = 10
 -- Python3
 vim.cmd([[
     let g:python3_host_prog = '/usr/bin/python3'
@@ -60,3 +63,6 @@ keymap.set('', 'sl', '<C-w>l')
 keymap.set('i', '<C-f>', '<Right>')
 -- jjでEscする
 keymap.set('i','jj','<Esc>')
+
+-- 設定ファイルを開く
+keymap.set('n','<F1>',':edit $MYVIMRC<CR>')

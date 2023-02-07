@@ -132,7 +132,6 @@
 -- 	}
 -- })
 
--- -- set colorscheme after options
 -- vim.cmd('colorscheme rose-pine')
 
 vim.cmd([[
@@ -141,7 +140,7 @@ set background=dark
 let g:everforest_enable_italic = 1
 let g:everforest_disable_italic_comment = 1 
 let g:everforest_background = 'medium'
-let g:everforest_diagnostic_text_highlight = 0 "textハイライトを有効化
+let g:everforest_diagnostic_text_highlight = 0 
 let g:everforest_better_performance = 1
 
 colorscheme everforest

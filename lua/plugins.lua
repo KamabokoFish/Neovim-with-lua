@@ -18,6 +18,7 @@ packer.startup(function(use)
   use 'ishan9299/nvim-solarized-lua'
   use 'rose-pine/neovim'
   use 'sainnhe/everforest'
+  use 'eddyekofo94/gruvbox-flat.nvim'
   -- use 'tjdevries/colorbuddy.nvim'
   -- use 'svrana/neosolarized.nvim'
   use 'folke/lsp-colors.nvim'
