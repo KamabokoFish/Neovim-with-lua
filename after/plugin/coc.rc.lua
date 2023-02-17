@@ -92,7 +92,7 @@ local opts = {silent = true, nowait = true}
 
 -- Symbol renaming
 keyset("n", "rn", "<Plug>(coc-rename)", {silent = true})
-keyset("n", "<leader>ma", "<Plug>(coc-codeaction-selected)", opts)
+keyset("n", "<leader>ma", "<Plug>(coc-codeaction-selected)j", opts)
 -- Run the Code Lens actions on the current line
 keyset("n", "<leader>cl", "<Plug>(coc-codelens-action)", opts)
 -- Use `[g` and `]g` to navigate diagnostics

@@ -11,6 +11,7 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use 'nvim-lua/plenary.nvim' -- Common 
+  use 'vim-jp/vimdoc-ja' -- japanese document
 
   -- use { "catppuccin/nvim", as = "catppuccin" } -- colorscheme
   -- use "EdenEast/nightfox.nvim" -- Packer
@@ -66,11 +67,11 @@ packer.startup(function(use)
   use({
     "kylechui/nvim-surround",
     tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-    config = function()
-    end
   })
 
   use 'kevinhwang91/nvim-hlslens'
+
+  use 'rust-lang/rust.vim'
 
   use 'prettier/vim-prettier'
 

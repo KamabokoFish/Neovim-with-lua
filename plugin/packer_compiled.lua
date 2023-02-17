@@ -175,7 +175,6 @@ _G.packer_plugins = {
     url = "https://github.com/ishan9299/nvim-solarized-lua"
   },
   ["nvim-surround"] = {
-    config = { "\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0" },
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/nvim-surround",
     url = "https://github.com/kylechui/nvim-surround"
@@ -204,6 +203,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["rust.vim"] = {
+    loaded = true,
+    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/rust.vim",
+    url = "https://github.com/rust-lang/rust.vim"
   },
   ["sqlite.lua"] = {
     loaded = true,
@@ -255,6 +259,11 @@ _G.packer_plugins = {
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/vim-wintabs-powerline",
     url = "https://github.com/zefei/vim-wintabs-powerline"
   },
+  ["vimdoc-ja"] = {
+    loaded = true,
+    path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/vimdoc-ja",
+    url = "https://github.com/vim-jp/vimdoc-ja"
+  },
   winresizer = {
     loaded = true,
     path = "/home/kadoma/.local/share/nvim/site/pack/packer/start/winresizer",
@@ -263,10 +272,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-surround
-time([[Config for nvim-surround]], true)
-try_loadstring("\27LJ\2\n\v\0\0\1\0\0\0\1K\0\1\0\0", "config", "nvim-surround")
-time([[Config for nvim-surround]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
