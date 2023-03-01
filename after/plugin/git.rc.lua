@@ -9,4 +9,4 @@ nnoremap <silent> <space>l :Git log --graph<CR><C-w>T
 
 local opts = {silent = true, noremap = true}
 -- LazyGitを起動
-vim.keymap.set("n","<space>s",":LazyGit<cr>",opts)
+-- vim.keymap.set("n","<space>s",":LazyGit<cr>",opts)

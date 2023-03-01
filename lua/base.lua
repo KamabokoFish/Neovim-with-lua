@@ -25,7 +25,7 @@ vim.opt.smarttab = true
 vim.opt.breakindent = true
 vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
-vim.opt.wrap = false 
+vim.opt.wrap = true 
 vim.opt.helplang = 'ja', 'en'
 vim.opt.updatetime = 300
 vim.opt.showtabline = 2
@@ -37,7 +37,7 @@ vim.opt.swapfile = false
 vim.opt.wrap = true
 
 -- float-transparent
-vim.opt.winblend = 10
+vim.opt.winblend = 5
 -- Python3
 vim.cmd([[
     let g:python3_host_prog = '/usr/bin/python3'

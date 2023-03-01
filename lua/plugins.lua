@@ -20,9 +20,9 @@ packer.startup(function(use)
   use 'rose-pine/neovim'
   use 'sainnhe/everforest'
   use 'eddyekofo94/gruvbox-flat.nvim'
-  -- use 'tjdevries/colorbuddy.nvim'
   -- use 'svrana/neosolarized.nvim'
   use 'folke/lsp-colors.nvim'
+  -- use 'tjdevries/colorbuddy.nvim'
 
   use 'lukas-reineke/indent-blankline.nvim'
   use 'antoinemadec/FixCursorHold.nvim'
@@ -34,8 +34,8 @@ packer.startup(function(use)
 
   use 'lambdalisue/fern.vim'
   use 'lambdalisue/nerdfont.vim'
-  use 'lambdalisue/fern-renderer-nerdfont.vim'
   use 'kyazdani42/nvim-web-devicons'
+  use 'lambdalisue/fern-renderer-nerdfont.vim'
   use 'lambdalisue/glyph-palette.vim'
 
   -- coc.nvim
@@ -62,7 +62,8 @@ packer.startup(function(use)
 
   use 'windwp/nvim-autopairs' 
   use 'windwp/nvim-ts-autotag'
-  use "terrortylor/nvim-comment"
+  use 'numToStr/Comment.nvim'
+  -- use "terrortylor/nvim-comment"
   -- use 'machakann/vim-sandwich'
   use({
     "kylechui/nvim-surround",

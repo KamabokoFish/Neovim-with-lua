@@ -8,7 +8,7 @@ telescope.setup({
       sorting_strategy = "ascending",
       winblend = 4,
       layout_strategy = 'vertical',
-      layout_config = { height = 0.8,width = 0.8 },
+      layout_config = { height = 0.9 },
       file_ignore_patterns = {
         "^.git/",
         "^node_modules/",

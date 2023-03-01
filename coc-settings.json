@@ -17,6 +17,7 @@
   "javascript.format.enable":false,
   "typescript.autoClosingTags":false,
   "css.completion.completePropertyWithSemicolon":false,
+  "scss.completion.completePropertyWithSemicolon":false,
   "yank.enableCompletion":false,
   "suggest.completionItemKindLabels": {
     "function": "\uf794",
