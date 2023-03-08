@@ -22,7 +22,6 @@ telescope.setup({
 })
 
 telescope.load_extension("frecency") --frecency search
-telescope.load_extension("emoji") --find emoji
 telescope.load_extension("coc") -- coc integration
 
 vim.keymap.set('n', '<leader>f',

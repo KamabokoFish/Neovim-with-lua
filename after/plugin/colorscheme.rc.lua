@@ -1,6 +1,6 @@
 
 -- require("catppuccin").setup({
---     flavour = "mocha", -- latte, frappe, macchiato, mocha
+--     flavour = "macchiato", -- latte, frappe, macchiato, mocha
 --     background = { -- :h background
 --         light = "latte",
 --         dark = "mocha",
@@ -32,16 +32,16 @@
 --     color_overrides = {},
 --     custom_highlights = {},
 --     integrations = {
---         cmp = true,
 --         gitsigns = true,
 --         nvimtree = true,
+--         coc_nvim = false,
 --         telescope = true,
 --         notify = false,
 --         mini = false,
---             fern = true,
---             indent_blankline = {
---             enabled = false,
---             colored_indent_levels = false,
+--         fern = true,
+--         indent_blankline = {
+--         enabled = true,
+--         colored_indent_levels = false,
 -- 		},
 
 --         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
@@ -139,7 +139,7 @@ vim.cmd([[
 set background=dark
 let g:everforest_enable_italic = 1
 let g:everforest_disable_italic_comment = 1 
-let g:everforest_background = 'medium'
+let g:everforest_background = 'hard'
 let g:everforest_diagnostic_text_highlight = 0 
 let g:everforest_better_performance = 1
 
